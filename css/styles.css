@@ -1,0 +1,97 @@
+* {
+  font-size: 0.97rem;
+}
+
+body {
+  background:#0d0b0a;          
+  font-family: monospace;
+  margin: 0;
+  color: #fcf6eb;               /* default warm text */
+  margin-left: 23%;
+  margin-right: 23%;
+}
+
+.nav {
+  background: #006400;          /* dark green */
+  border-bottom: 1px solid #228B22; /* brighter green accent */
+  padding: 6px 16px;
+  margin-top: 3px;
+  display: flex;
+
+}
+
+.nav a {
+  color: #ffffff;               /* white text */
+  text-decoration: none;
+
+  
+  
+}
+.nav > div {
+  display: flex;               /* now <a> are flex items */
+  gap: 18px;                   /* spacing between the links */
+}
+
+.nav a:hover {
+  color: #c2f0c2;               /* pale green hover */
+}
+.test{
+    margin-left: auto;
+}
+
+p{
+   text-indent:20px;
+}
+.indent {
+  margin-left: 2em;     /* pushes it over */
+  display: inline-block; /* lets margin-left apply correctly */
+}
+.indent2 {
+  margin-left: -0.4em;     /* pushes it over */
+  display: inline-block; /* lets margin-left apply correctly */
+}
+
+.link-container{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.link-container img {
+  width: 17px;
+  height: auto;     /* keeps aspect ratio crisp */
+}
+
+
+/* terminal prompt colors */
+.terminal{
+  color:#50fa7b;      /* green */
+
+}
+
+
+.cursor {
+  display: inline-block;
+  width: 0.6ch;       /* block width */
+  height: 1em;        /* block height */
+  background: #c2c2c2;
+  margin-left: 2px;
+  vertical-align: -2px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+.cursor {
+  display: inline-block;
+  width: 0.6ch;
+  height: 2px;
+  background: #c2c2c2;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 1s steps(1) infinite;
+}
