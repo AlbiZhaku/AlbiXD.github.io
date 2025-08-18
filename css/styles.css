@@ -1,35 +1,40 @@
 * {
-  font-size: 0.97rem;
+  font-size: 1.1rem;
+  
 }
 
 body {
-  background:#0d0b0a;          
+  background:#020202;          
   font-family: monospace;
   margin: 0;
   color: #fcf6eb;               /* default warm text */
-  margin-left: 23%;
-  margin-right: 23%;
+  margin-left: 26.2%;
+  margin-right: 26.2%;
+
 }
 
 .nav {
   background: #006400;          /* dark green */
   border-bottom: 1px solid #228B22; /* brighter green accent */
-  padding: 6px 16px;
+  padding: 4px 15px;
   margin-top: 3px;
   display: flex;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
 }
 
 .nav a {
   color: #ffffff;               /* white text */
   text-decoration: none;
-
-  
-  
+  font-size: 1.07rem;
+  font-family: sans-serif;
+  font-weight: 300 !important;
 }
 .nav > div {
   display: flex;               /* now <a> are flex items */
-  gap: 18px;                   /* spacing between the links */
+  gap: 19px;                   /* spacing between the links */
 }
 
 .nav a:hover {
