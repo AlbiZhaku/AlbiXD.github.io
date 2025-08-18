@@ -2,6 +2,12 @@
   font-size: 1.1rem;
   
 }
+.nav-logo {
+  height: 20px;         /* controls size consistently */
+  width: auto;          /* keeps aspect ratio sharp */
+  border-radius: 3px;   /* optional, rounds corners */
+  vertical-align: middle; /* keeps it aligned with text */
+}
 
 body {
   background:#020202;          
