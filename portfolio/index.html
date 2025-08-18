@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Albi</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" type="image/jpg" href="./assets/102504290.jpg">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/jpg" href="/assets/102504290.jpg">
 
 </head>
 
@@ -15,7 +15,7 @@
     <div id="navbar"></div>
 
     <script>
-        fetch("./components/navbar.html")
+        fetch("/components/navbar.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("navbar").innerHTML = data;
@@ -28,7 +28,7 @@
     <hr>
     <div class="c8">
         <h1>Chip-8 Emulator</h1>
-        <img style="height: auto; width: 100%;" src="./assets/chip8.png">
+        <img style="height: auto; width: 100%;" src="/assets/chip8.png">
         <iframe width="100%" height="500" src="https://www.youtube.com/embed/MfdVqltHJRw?si=NZ3M-LxgHF5ffEx-"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -47,7 +47,7 @@
 
         <div id="ruler">
             <script>
-                fetch("./components/bar.html")
+                fetch("/components/bar.html")
                     .then(res => res.text())
                     .then(data => {
                         document.getElementById("ruler").innerHTML = data;
