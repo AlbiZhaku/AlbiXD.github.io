@@ -3,52 +3,94 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Albi</title>
+    <title>Albi – Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" type="image/jpg" href="./assets/102504290.jpg">
-
 </head>
 
 <body>
-    <div id="navbar"></div>
+    <div class="page">
+        <!-- HEADER -->
+        <header>
+            <div>
+                <h1>Albi</h1>
+                <div class="subtitle">Computer Science @ NJIT</div>
+            </div>
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="Albi_Resume.pdf">Resume</a>
+                <a href="https://github.com/AlbiXD" target="_blank">GitHub</a>
+            </nav>
+        </header>
 
-    <script>
-        fetch("/components/navbar.html")
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("navbar").innerHTML = data;
-            });
-    </script>
+        <!-- INTRO -->
+        <section>
+            <p>
+                I’m a CS student interested in low-level systems, backend tooling, and performance.
+                Most of my work is in C and Linux: emulators, parallel programs, and small tools that
+                actually get used.
+            </p>
+            <p class="muted">
+                This page is a short overview of the projects I’m okay showing people.
+            </p>
+        </section>
 
-    <div>
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Selected projects</h2>
+            <ul class="project-list">
+                <li>
+                    <div class="project-title">Distributed Video Filter (MPI + CUDA)</div>
+                    <div class="project-meta">C/C++ · MPI · CUDA · OpenCV · Linux</div>
+                    <p>
+                        Multi-process video processing pipeline with grayscale, blur, and edge detection
+                        filters, implemented in serial, MPI, and GPU versions for comparison.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/your-username/mpi-cuda-video" target="_blank">GitHub</a>
+                    </div>
+                </li>
 
-        <div class="t">
+                <li>
+                    <div class="project-title">Minecraft b1.7.3 Network Protocol</div>
+                    <div class="project-meta">C · file I/O</div>
+                    <p>
+                        Command-line tool to track job applications, statuses, and notes in a plain-text
+                        format that’s easy to grep and script.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/your-username/job-tracker-cli" target="_blank">GitHub</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title">CHIP-8 Emulator</div>
+                    <div class="project-meta">C · SDL2</div>
+                    <p>
+                        Simple CHIP-8 interpreter that runs classic ROMs with keyboard input and basic
+                        debugging output.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/your-username/chip8-emulator" target="_blank">GitHub</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-            <p><span class="terminal">albi@web:~$</span> <span class="">./welcome.sh</span></p>
-            <p>Welcome to Albi's webpage.</p>
-            <br>
-            <p><span class="terminal">~/posts</span> <span class="indent">→ dev logs & thoughts</span></p>
-            <p><span class="terminal">~/notes</span> <span class="indent">→ study notes & references</span></p>
-            <p><span class="terminal">~/portfolio</span> <span class="indent2">→ projects & experiments</span></p>
-            <p><span class="terminal">~/about</span> <span class="indent">→ who I am & contact info</span></p>
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I’m studying Computer Science at NJIT. I prefer systems and backend work over UI,
+                and I’m most comfortable in C, Linux, and command line workflows. I’m interested
+                in roles around systems, infra, or backend engineering.
+            </p>
+        </section>
 
-
-            <br>
-            <p>Check out what I am currently working on!</p>
-            <br>
-            <pre class="terminal">  albi@web:~$ <span class="cursor"></span></pre>
-        </div>
-
-        <div id="ruler">
-            <script>
-                fetch("/components/bar.html")
-                    .then(res => res.text())
-                    .then(data => {
-                        document.getElementById("ruler").innerHTML = data;
-                    });
-            </script>
-        </div>
+        <footer>
+            <p>Contact: <a href="mailto:az373@njit.edu">az372@njit.edu</a></p>
+        </footer>
+    </div>
 </body>
 
 </html>
